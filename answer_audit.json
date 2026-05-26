@@ -1,0 +1,56 @@
+{
+  "audits": [
+    {
+      "query_id": "Q1",
+      "audit_label": "pass",
+      "support_assessment": "The draft answer is fully supported by the final context. The product overview document explicitly states that event data is retained for 13 months on the standard plan and 36 months on the enterprise plan, which directly answers the question.",
+      "citation_check": "The citation 'product_overview_000000' is valid and correctly references the document that contains the retention information.",
+      "hallucination_risk": "low",
+      "recommended_fix": "",
+      "final_context_chunk_ids": [
+        "product_overview_000000",
+        "security_000000",
+        "product_overview_000300"
+      ]
+    },
+    {
+      "query_id": "Q2",
+      "audit_label": "pass",
+      "support_assessment": "The draft answer is fully supported by the context. The statement that 'authentication supports SCIM provisioning on enterprise plans' is directly stated in the product_overview_000300 chunk, which is the cited source.",
+      "citation_check": "The citation 'product_overview_000300' is valid and corresponds to a context chunk that explicitly mentions SCIM provisioning on enterprise plans.",
+      "hallucination_risk": "low",
+      "recommended_fix": "",
+      "final_context_chunk_ids": [
+        "product_overview_000300",
+        "product_overview_000000",
+        "billing_000000"
+      ]
+    },
+    {
+      "query_id": "Q3",
+      "audit_label": "pass",
+      "support_assessment": "The answer is fully supported by the final context. The statement that 'refunds are not offered for partial months, except where required by law' directly addresses the question about refunds for unused days in a month.",
+      "citation_check": "The citation 'billing_000000' is valid and directly references the relevant content in the billing document.",
+      "hallucination_risk": "low",
+      "recommended_fix": "",
+      "final_context_chunk_ids": [
+        "billing_000000",
+        "security_000000",
+        "product_overview_000300"
+      ]
+    },
+    {
+      "query_id": "Q4",
+      "audit_label": "pass",
+      "support_assessment": "The draft answer is fully supported by the provided context. The security document explicitly states that the service is not described as HIPAA compliant in current public documentation, which directly supports the claim made in the answer.",
+      "citation_check": "The citation to security_000000 is appropriate and directly references the statement about HIPAA compliance being unmentioned in public documentation.",
+      "hallucination_risk": "low",
+      "recommended_fix": "",
+      "final_context_chunk_ids": [
+        "security_000000",
+        "product_overview_000300",
+        "billing_000000"
+      ]
+    }
+  ]
+}
